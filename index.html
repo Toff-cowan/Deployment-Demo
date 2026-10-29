@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A beginner-friendly guide to deploying your first website.">
+  <title>DeployReady | Your First Deployment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="logo" href="#home">🚀 DeployReady</a>
+      <a class="nav-link" href="#tips">Deployment Tips</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="eyebrow">STUDENT DEPLOYMENT STARTER</p>
+        <h1>Build it. <span>Deploy it.</span> Share it.</h1>
+        <p class="intro">Your website shouldn't live only on your laptop. Learn how to publish your first website so anyone can visit it.</p>
+        <a class="button" href="#tips">Explore the Tips ↓</a>
+      </div>
+    </section>
+
+    <section class="section container" id="tips">
+      <div class="section-heading">
+        <p class="eyebrow">GET READY TO GO LIVE</p>
+        <h2>5 tips for your first deployment</h2>
+        <p>Follow these steps before sharing your website with the world.</p>
+      </div>
+      <div class="cards">
+        <article class="card"><span class="card-icon">📁</span><h3>1. Organize your files</h3><p>Keep <code>index.html</code>, <code>style.css</code>, and <code>script.js</code> together in one project folder.</p></article>
+        <article class="card"><span class="card-icon">🧪</span><h3>2. Test locally</h3><p>Open your site in a browser. Check buttons, links, images, and mobile layouts.</p></article>
+        <article class="card"><span class="card-icon">🔐</span><h3>3. Protect secrets</h3><p>Never place passwords, API secrets, or private keys in frontend files.</p></article>
+        <article class="card"><span class="card-icon">☁️</span><h3>4. Choose a host</h3><p>Try GitHub Pages, Netlify, or Vercel to publish this static website.</p></article>
+        <article class="card"><span class="card-icon">🔗</span><h3>5. Share and improve</h3><p>Visit your live URL, test it again, and share it with a classmate for feedback.</p></article>
+      </div>
+    </section>
+
+    <section class="section checklist-section" id="checklist">
+      <div class="container narrow">
+        <p class="eyebrow">YOUR MINI CHALLENGE</p>
+        <h2>Deployment checklist</h2>
+        <p>Tick each task as you complete it.</p>
+        <div class="checklist">
+          <label><input type="checkbox" class="task"> My website opens locally</label>
+          <label><input type="checkbox" class="task"> CSS and JavaScript work</label>
+          <label><input type="checkbox" class="task"> My site looks good on mobile</label>
+          <label><input type="checkbox" class="task"> I published my website</label>
+          <label><input type="checkbox" class="task"> I tested and shared my live link</label>
+        </div>
+        <p class="progress" id="progress" role="status" aria-live="polite">0 of 5 tasks completed</p>
+        <button class="button secondary" id="reset" type="button">Reset checklist</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container">Made for students learning to deploy. 🚀</div></footer>
+</body>
+</html>
